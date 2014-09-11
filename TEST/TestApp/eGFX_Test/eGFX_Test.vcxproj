@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2BB98F5A-8BD8-4530-9B1B-1D26CD200C2F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>eGFX_Test</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_1BPP;..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_4BPP;..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP;..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__AntiAliasGridFit_4BPP;..\..\..\SRC\;..\..\..\SRC\Drivers;..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_4BPP;..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_8BPP;..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_1BPP;..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_8BPP;..\..\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__AntiAliasGridFit_4BPP\Arial__24px__Regular__AntiAliasGridFit_4BPP.h" />
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP.h" />
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_1BPP\FONT_3_5_1BPP.h" />
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_4BPP\FONT_3_5_4BPP.h" />
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_8BPP\FONT_3_5_8BPP.h" />
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_1BPP\FONT_5_7_1BPP.h" />
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_4BPP\FONT_5_7_4BPP.h" />
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_8BPP\FONT_5_7_8BPP.h" />
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_Tools\bin\Debug\TestSprites\TestSprites_1BPP.h" />
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_Tools\bin\Debug\TestSprites\TestSprites_4BPP.h" />
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_Tools\bin\Debug\TestSprites\TestSprites_8BPP.h" />
+    <ClInclude Include="..\..\..\SRC\Drivers\eGFX_Driver_Win32.h" />
+    <ClInclude Include="..\..\..\SRC\eGFX.h" />
+    <ClInclude Include="..\..\..\SRC\eGFX_DataTypes.h" />
+    <ClInclude Include="eGFX_Test.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__AntiAliasGridFit_4BPP\Arial__24px__Regular__AntiAliasGridFit_4BPP.c" />
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP.c" />
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_1BPP\FONT_3_5_1BPP.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_4BPP\FONT_3_5_4BPP.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_8BPP\FONT_3_5_8BPP.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_1BPP\FONT_5_7_1BPP.c" />
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_4BPP\FONT_5_7_4BPP.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_8BPP\FONT_5_7_8BPP.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_Tools\bin\Debug\TestSprites\TestSprites_1BPP.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_Tools\bin\Debug\TestSprites\TestSprites_4BPP.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_Tools\bin\Debug\TestSprites\TestSprites_8BPP.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SRC\Drivers\eGFX_Driver_Win32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\;..\..\;..\;..\..\..\SRC\;..\..\..\SRC\Drivers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CallingConvention Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Cdecl</CallingConvention>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SRC\eGFX.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="eGFX_Test.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="eGFX_TestDrawLoop.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\GFX_TOOLS\GFX_Tools\bin\Debug\TestSprites;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="eGFX_Test.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="eGFX_Test.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_4BPP\FontConfiguration.jsx" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

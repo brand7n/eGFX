@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="eGFX_Test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SRC\eGFX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SRC\Drivers\eGFX_Driver_Win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SRC\eGFX_DataTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_Tools\bin\Debug\TestSprites\TestSprites_1BPP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_Tools\bin\Debug\TestSprites\TestSprites_4BPP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_Tools\bin\Debug\TestSprites\TestSprites_8BPP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__AntiAliasGridFit_4BPP\Arial__24px__Regular__AntiAliasGridFit_4BPP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_8BPP\FONT_3_5_8BPP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_1BPP\FONT_3_5_1BPP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_4BPP\FONT_5_7_4BPP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_8BPP\FONT_5_7_8BPP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_4BPP\FONT_3_5_4BPP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_1BPP\FONT_5_7_1BPP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SRC\eGFX.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SRC\Drivers\eGFX_Driver_Win32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="eGFX_TestDrawLoop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="eGFX_Test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_Tools\bin\Debug\TestSprites\TestSprites_1BPP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_Tools\bin\Debug\TestSprites\TestSprites_4BPP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_Tools\bin\Debug\TestSprites\TestSprites_8BPP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_1BPP\FONT_3_5_1BPP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_4BPP\FONT_3_5_4BPP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_8BPP\FONT_3_5_8BPP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_4BPP\FONT_5_7_4BPP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_8BPP\FONT_5_7_8BPP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_1BPP\FONT_5_7_1BPP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__AntiAliasGridFit_4BPP\Arial__24px__Regular__AntiAliasGridFit_4BPP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="eGFX_Test.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="eGFX_Test.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_4BPP\FontConfiguration.jsx">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

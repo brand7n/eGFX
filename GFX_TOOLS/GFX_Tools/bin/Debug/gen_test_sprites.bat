@@ -1,0 +1,1 @@
+GFX_Tools.exe GenerateSprites TestSprites all

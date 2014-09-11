@@ -1,0 +1,27 @@
+C:\Users\emh203\Desktop\LCD BIT_PLANE GENERATOR\LibSpriteCompiler\SpriteCompile\bin\Debug\SpriteCompile.exe
+C:\Users\emh203\Desktop\LCD BIT_PLANE GENERATOR\LibSpriteCompiler\SpriteCompile\bin\Debug\SpriteCompile.pdb
+C:\Users\emh203\Desktop\LCD BIT_PLANE GENERATOR\LibSpriteCompiler\SpriteCompile\bin\Debug\JsonExSerializer.dll
+C:\Users\emh203\Desktop\LCD BIT_PLANE GENERATOR\LibSpriteCompiler\SpriteCompile\bin\Debug\LibSpriteCompiler.dll
+C:\Users\emh203\Desktop\LCD BIT_PLANE GENERATOR\LibSpriteCompiler\SpriteCompile\bin\Debug\LibSpriteCompiler.pdb
+C:\Users\emh203\Desktop\LCD BIT_PLANE GENERATOR\LibSpriteCompiler\SpriteCompile\bin\Debug\JsonExSerializer.xml
+C:\Users\emh203\Desktop\LCD BIT_PLANE GENERATOR\LibSpriteCompiler\SpriteCompile\obj\x86\Debug\SpriteGen.csprojResolveAssemblyReference.cache
+C:\Users\emh203\Desktop\LCD BIT_PLANE GENERATOR\LibSpriteCompiler\SpriteCompile\obj\x86\Debug\SpriteCompile.exe
+C:\Users\emh203\Desktop\LCD BIT_PLANE GENERATOR\LibSpriteCompiler\SpriteCompile\obj\x86\Debug\SpriteCompile.pdb
+C:\Users\ehughes\Dropbox\LCD BIT_PLANE GENERATOR\LibSpriteCompiler\SpriteCompile\bin\Debug\SpriteCompile.exe
+C:\Users\ehughes\Dropbox\LCD BIT_PLANE GENERATOR\LibSpriteCompiler\SpriteCompile\bin\Debug\SpriteCompile.pdb
+C:\Users\ehughes\Dropbox\LCD BIT_PLANE GENERATOR\LibSpriteCompiler\SpriteCompile\bin\Debug\JsonExSerializer.dll
+C:\Users\ehughes\Dropbox\LCD BIT_PLANE GENERATOR\LibSpriteCompiler\SpriteCompile\bin\Debug\LibSpriteCompiler.dll
+C:\Users\ehughes\Dropbox\LCD BIT_PLANE GENERATOR\LibSpriteCompiler\SpriteCompile\bin\Debug\LibSpriteCompiler.pdb
+C:\Users\ehughes\Dropbox\LCD BIT_PLANE GENERATOR\LibSpriteCompiler\SpriteCompile\bin\Debug\JsonExSerializer.xml
+C:\Users\ehughes\Dropbox\LCD BIT_PLANE GENERATOR\LibSpriteCompiler\SpriteCompile\obj\x86\Debug\SpriteGen.csprojResolveAssemblyReference.cache
+C:\Users\ehughes\Dropbox\LCD BIT_PLANE GENERATOR\LibSpriteCompiler\SpriteCompile\obj\x86\Debug\SpriteCompile.exe
+C:\Users\ehughes\Dropbox\LCD BIT_PLANE GENERATOR\LibSpriteCompiler\SpriteCompile\obj\x86\Debug\SpriteCompile.pdb
+C:\Users\ehughes\Dropbox\GFX_TOOLS\SpriteCompile\obj\x86\Debug\SpriteCompile.exe
+C:\Users\ehughes\Dropbox\GFX_TOOLS\SpriteCompile\obj\x86\Debug\SpriteCompile.pdb
+C:\Users\ehughes\Dropbox\GFX_TOOLS\SpriteCompile\bin\Debug\SpriteCompile.exe
+C:\Users\ehughes\Dropbox\GFX_TOOLS\SpriteCompile\bin\Debug\SpriteCompile.pdb
+C:\Users\ehughes\Dropbox\GFX_TOOLS\SpriteCompile\bin\Debug\JsonExSerializer.dll
+C:\Users\ehughes\Dropbox\GFX_TOOLS\SpriteCompile\bin\Debug\LibSpriteCompiler.dll
+C:\Users\ehughes\Dropbox\GFX_TOOLS\SpriteCompile\bin\Debug\LibSpriteCompiler.pdb
+C:\Users\ehughes\Dropbox\GFX_TOOLS\SpriteCompile\bin\Debug\JsonExSerializer.xml
+C:\Users\ehughes\Dropbox\GFX_TOOLS\SpriteCompile\obj\x86\Debug\SpriteGen.csprojResolveAssemblyReference.cache

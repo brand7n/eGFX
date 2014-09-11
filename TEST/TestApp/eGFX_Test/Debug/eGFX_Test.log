@@ -1,0 +1,36 @@
+﻿Build started 7/15/2014 10:31:30 PM.
+     1>Project "C:\Users\Eli\Dropbox\GFX\eGFX\TEST\TestApp\eGFX_Test\eGFX_Test.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_1BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_4BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__AntiAliasGridFit_4BPP /I..\..\..\SRC\ /I..\..\..\SRC\Drivers /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_4BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_8BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_1BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_8BPP /I..\..\ /I..\ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt eGFX_Test.c
+         eGFX_Test.c
+     1>c:\users\eli\dropbox\gfx\egfx\test\testapp\egfx_test\egfx_test.c(211): warning C4244: '=' : conversion from 'WPARAM' to 'float', possible loss of data
+     1>c:\users\eli\dropbox\gfx\egfx\test\testapp\egfx_test\egfx_test.c(212): warning C4244: '=' : conversion from 'WPARAM' to 'float', possible loss of data
+     1>c:\users\eli\dropbox\gfx\egfx\test\testapp\egfx_test\egfx_test.c(217): warning C4244: '=' : conversion from 'WPARAM' to 'float', possible loss of data
+     1>c:\users\eli\dropbox\gfx\egfx\test\testapp\egfx_test\egfx_test.c(218): warning C4244: '=' : conversion from 'WPARAM' to 'float', possible loss of data
+     1>c:\users\eli\dropbox\gfx\egfx\test\testapp\egfx_test\egfx_test.c(225): warning C4244: '=' : conversion from 'WPARAM' to 'float', possible loss of data
+     1>c:\users\eli\dropbox\gfx\egfx\test\testapp\egfx_test\egfx_test.c(226): warning C4244: '=' : conversion from 'WPARAM' to 'float', possible loss of data
+     1>c:\users\eli\dropbox\gfx\egfx\test\testapp\egfx_test\egfx_test.c(305): warning C4244: '=' : conversion from 'float' to 'int32_t', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Eli\Dropbox\GFX\eGFX\TEST\TestApp\eGFX_Test\Debug\eGFX_Test.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Eli\Dropbox\GFX\eGFX\TEST\TestApp\eGFX_Test\Debug\eGFX_Test.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Eli\Dropbox\GFX\eGFX\TEST\TestApp\eGFX_Test\Debug\eGFX_Test.lib" /MACHINE:X86 Debug\eGFX_Test.res
+         Debug\Arial__24px__Regular__AntiAliasGridFit_4BPP.obj
+         Debug\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP.obj
+         Debug\FONT_3_5_1BPP.obj
+         Debug\FONT_3_5_4BPP.obj
+         Debug\FONT_3_5_8BPP.obj
+         Debug\FONT_5_7_1BPP.obj
+         Debug\FONT_5_7_4BPP.obj
+         Debug\FONT_5_7_8BPP.obj
+         Debug\TestSprites_1BPP.obj
+         Debug\TestSprites_4BPP.obj
+         Debug\TestSprites_8BPP.obj
+         Debug\eGFX_Driver_Win32.obj
+         Debug\eGFX.obj
+         Debug\eGFX_Test.obj
+         Debug\eGFX_TestDrawLoop.obj
+         Debug\stdafx.obj
+         eGFX_Test.vcxproj -> C:\Users\Eli\Dropbox\GFX\eGFX\TEST\TestApp\eGFX_Test\Debug\eGFX_Test.exe
+     1>Done Building Project "C:\Users\Eli\Dropbox\GFX\eGFX\TEST\TestApp\eGFX_Test\eGFX_Test.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.79
