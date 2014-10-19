@@ -72,6 +72,9 @@
     <ClInclude Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_1BPP\FONT_5_7_1BPP.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\SRC\eGFX_BMP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -120,6 +123,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SRC\eGFX_BMP.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

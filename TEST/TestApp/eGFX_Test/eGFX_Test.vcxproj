@@ -92,6 +92,7 @@
     <ClInclude Include="..\..\..\GFX_TOOLS\GFX_Tools\bin\Debug\TestSprites\TestSprites_8BPP.h" />
     <ClInclude Include="..\..\..\SRC\Drivers\eGFX_Driver_Win32.h" />
     <ClInclude Include="..\..\..\SRC\eGFX.h" />
+    <ClInclude Include="..\..\..\SRC\eGFX_BMP.h" />
     <ClInclude Include="..\..\..\SRC\eGFX_DataTypes.h" />
     <ClInclude Include="eGFX_Test.h" />
     <ClInclude Include="Resource.h" />
@@ -135,6 +136,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
     </ClCompile>
+    <ClCompile Include="..\..\..\SRC\eGFX_BMP.c" />
     <ClCompile Include="eGFX_Test.c">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>

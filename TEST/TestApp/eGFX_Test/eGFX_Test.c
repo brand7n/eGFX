@@ -6,6 +6,7 @@
 #include "stdint.h"
 
 #include "eGFX.h"
+#include "eGFX_BMP.h"
 #include "eGFX_Driver_Win32.h"
 #include <strsafe.h>
 
@@ -199,13 +200,17 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 		case VK_DOWN:
 
+
 			DrawTestMode--;
 			DrawTestMode &= 0x1F;
 			eGFX_InitTestDrawLoop(DrawTestMode);
 			InvalidateRect(hWnd, NULL, TRUE);
 			break;
 
-	
+		case VK_RETURN:
+				ImagePlaneToGrayScaleBMP("test.bmp" , &eGFX_BackBuffer);
+
+				break;
 		case 0x31:
 			PixelFill = 1.0f;// fraction of a cell filled with color
 			PixelSizeX = wParam - 0x30;

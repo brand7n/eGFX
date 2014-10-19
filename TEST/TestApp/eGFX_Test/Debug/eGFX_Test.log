@@ -1,17 +1,67 @@
-﻿Build started 7/15/2014 10:31:30 PM.
-     1>Project "C:\Users\Eli\Dropbox\GFX\eGFX\TEST\TestApp\eGFX_Test\eGFX_Test.vcxproj" on node 2 (Build target(s)).
+﻿Build started 10/18/2014 10:35:56 PM.
+     1>Project "C:\Users\Eli\Documents\GitHub\eGFX\TEST\TestApp\eGFX_Test\eGFX_Test.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_1BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_4BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__AntiAliasGridFit_4BPP /I..\..\..\SRC\ /I..\..\..\SRC\Drivers /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_4BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_8BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_1BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_8BPP /I..\..\ /I..\ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt eGFX_Test.c
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_1BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_4BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__AntiAliasGridFit_4BPP /I..\..\..\SRC\ /I..\..\..\SRC\Drivers /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_4BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_8BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_1BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_8BPP /I..\..\ /I..\ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\eGFX_Test.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_1BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_4BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__AntiAliasGridFit_4BPP /I..\..\..\SRC\ /I..\..\..\SRC\Drivers /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_4BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_8BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_1BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_8BPP /I..\..\ /I..\ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__AntiAliasGridFit_4BPP\Arial__24px__Regular__AntiAliasGridFit_4BPP.c ..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP.c ..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_1BPP\FONT_3_5_1BPP.c ..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_4BPP\FONT_3_5_4BPP.c ..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_8BPP\FONT_3_5_8BPP.c ..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_1BPP\FONT_5_7_1BPP.c ..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_4BPP\FONT_5_7_4BPP.c ..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_8BPP\FONT_5_7_8BPP.c ..\..\..\GFX_TOOLS\GFX_Tools\bin\Debug\TestSprites\TestSprites_1BPP.c ..\..\..\GFX_TOOLS\GFX_Tools\bin\Debug\TestSprites\TestSprites_4BPP.c ..\..\..\GFX_TOOLS\GFX_Tools\bin\Debug\TestSprites\TestSprites_8BPP.c ..\..\..\SRC\eGFX.c ..\..\..\SRC\eGFX_BMP.c eGFX_Test.c
          eGFX_Test.c
-     1>c:\users\eli\dropbox\gfx\egfx\test\testapp\egfx_test\egfx_test.c(211): warning C4244: '=' : conversion from 'WPARAM' to 'float', possible loss of data
-     1>c:\users\eli\dropbox\gfx\egfx\test\testapp\egfx_test\egfx_test.c(212): warning C4244: '=' : conversion from 'WPARAM' to 'float', possible loss of data
-     1>c:\users\eli\dropbox\gfx\egfx\test\testapp\egfx_test\egfx_test.c(217): warning C4244: '=' : conversion from 'WPARAM' to 'float', possible loss of data
-     1>c:\users\eli\dropbox\gfx\egfx\test\testapp\egfx_test\egfx_test.c(218): warning C4244: '=' : conversion from 'WPARAM' to 'float', possible loss of data
-     1>c:\users\eli\dropbox\gfx\egfx\test\testapp\egfx_test\egfx_test.c(225): warning C4244: '=' : conversion from 'WPARAM' to 'float', possible loss of data
-     1>c:\users\eli\dropbox\gfx\egfx\test\testapp\egfx_test\egfx_test.c(226): warning C4244: '=' : conversion from 'WPARAM' to 'float', possible loss of data
-     1>c:\users\eli\dropbox\gfx\egfx\test\testapp\egfx_test\egfx_test.c(305): warning C4244: '=' : conversion from 'float' to 'int32_t', possible loss of data
+     1>c:\users\eli\documents\github\egfx\test\testapp\egfx_test\egfx_test.c(216): warning C4244: '=' : conversion from 'WPARAM' to 'float', possible loss of data
+     1>c:\users\eli\documents\github\egfx\test\testapp\egfx_test\egfx_test.c(217): warning C4244: '=' : conversion from 'WPARAM' to 'float', possible loss of data
+     1>c:\users\eli\documents\github\egfx\test\testapp\egfx_test\egfx_test.c(222): warning C4244: '=' : conversion from 'WPARAM' to 'float', possible loss of data
+     1>c:\users\eli\documents\github\egfx\test\testapp\egfx_test\egfx_test.c(223): warning C4244: '=' : conversion from 'WPARAM' to 'float', possible loss of data
+     1>c:\users\eli\documents\github\egfx\test\testapp\egfx_test\egfx_test.c(230): warning C4244: '=' : conversion from 'WPARAM' to 'float', possible loss of data
+     1>c:\users\eli\documents\github\egfx\test\testapp\egfx_test\egfx_test.c(231): warning C4244: '=' : conversion from 'WPARAM' to 'float', possible loss of data
+     1>c:\users\eli\documents\github\egfx\test\testapp\egfx_test\egfx_test.c(310): warning C4244: '=' : conversion from 'float' to 'int32_t', possible loss of data
+         eGFX_BMP.c
+     1>c:\users\eli\documents\github\egfx\src\egfx_bmp.c(93): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
+     1>c:\users\eli\documents\github\egfx\src\egfx_bmp.c(103): warning C4098: 'ImagePlaneToGrayScaleBMP' : 'void' function returning a value
+     1>c:\users\eli\documents\github\egfx\src\egfx_bmp.c(162): warning C4018: '<' : signed/unsigned mismatch
+         eGFX.c
+     1>c:\users\eli\documents\github\egfx\src\egfx.c(1228): warning C4090: 'function' : different 'const' qualifiers
+     1>c:\users\eli\documents\github\egfx\src\egfx.c(1255): warning C4090: 'function' : different 'const' qualifiers
+     1>c:\users\eli\documents\github\egfx\src\egfx.c(1274): warning C4090: 'function' : different 'const' qualifiers
+     1>c:\users\eli\documents\github\egfx\src\egfx.c(1298): warning C4090: 'function' : different 'const' qualifiers
+     1>c:\users\eli\documents\github\egfx\src\egfx.c(1346): warning C4090: 'function' : different 'const' qualifiers
+         TestSprites_8BPP.c
+         TestSprites_4BPP.c
+         TestSprites_1BPP.c
+         FONT_5_7_8BPP.c
+     1>c:\users\eli\documents\github\egfx\gfx_tools\gfx_font_gen\bin\debug\font_5_7_8bpp\font_5_7_8bpp.c(1167): warning C4090: 'initializing' : different 'const' qualifiers
+         FONT_5_7_4BPP.c
+     1>c:\users\eli\documents\github\egfx\gfx_tools\gfx_font_gen\bin\debug\font_5_7_4bpp\font_5_7_4bpp.c(1071): warning C4090: 'initializing' : different 'const' qualifiers
+         FONT_5_7_1BPP.c
+     1>c:\users\eli\documents\github\egfx\gfx_tools\gfx_font_gen\bin\debug\font_5_7_1bpp\font_5_7_1bpp.c(975): warning C4090: 'initializing' : different 'const' qualifiers
+         FONT_3_5_8BPP.c
+     1>c:\users\eli\documents\github\egfx\gfx_tools\gfx_font_gen\bin\debug\font_3_5_8bpp\font_3_5_8bpp.c(975): warning C4090: 'initializing' : different 'const' qualifiers
+         FONT_3_5_4BPP.c
+     1>c:\users\eli\documents\github\egfx\gfx_tools\gfx_font_gen\bin\debug\font_3_5_4bpp\font_3_5_4bpp.c(975): warning C4090: 'initializing' : different 'const' qualifiers
+         FONT_3_5_1BPP.c
+     1>c:\users\eli\documents\github\egfx\gfx_tools\gfx_font_gen\bin\debug\font_3_5_1bpp\font_3_5_1bpp.c(975): warning C4090: 'initializing' : different 'const' qualifiers
+         Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP.c
+     1>c:\users\eli\documents\github\egfx\gfx_tools\gfx_font_gen\bin\debug\arial__24px__regular__singlebitperpixelgridfit_4bpp\arial__24px__regular__singlebitperpixelgridfit_4bpp.c(1680): warning C4090: 'initializing' : different 'const' qualifiers
+         Arial__24px__Regular__AntiAliasGridFit_4BPP.c
+     1>c:\users\eli\documents\github\egfx\gfx_tools\gfx_font_gen\bin\debug\arial__24px__regular__antialiasgridfit_4bpp\arial__24px__regular__antialiasgridfit_4bpp.c(1684): warning C4090: 'initializing' : different 'const' qualifiers
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\ /I..\..\ /I..\ /I..\..\..\SRC\ /I..\..\..\SRC\Drivers /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_1BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_4BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__AntiAliasGridFit_4BPP /I..\..\..\SRC\ /I..\..\..\SRC\Drivers /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_4BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_8BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_1BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_8BPP /I..\..\ /I..\ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\SRC\Drivers\eGFX_Driver_Win32.c
+         eGFX_Driver_Win32.c
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\..\GFX_TOOLS\GFX_Tools\bin\Debug\TestSprites /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_1BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_4BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\Arial__24px__Regular__AntiAliasGridFit_4BPP /I..\..\..\SRC\ /I..\..\..\SRC\Drivers /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_4BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_8BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_5_7_1BPP /I..\..\..\GFX_TOOLS\GFX_FONT_GEN\bin\Debug\FONT_3_5_8BPP /I..\..\ /I..\ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt eGFX_TestDrawLoop.c
+         eGFX_TestDrawLoop.c
+     1>c:\users\eli\documents\github\egfx\test\testapp\egfx_test\egfx_testdrawloop.c(94): warning C4090: 'function' : different 'const' qualifiers
+     1>c:\users\eli\documents\github\egfx\test\testapp\egfx_test\egfx_testdrawloop.c(108): warning C4090: 'function' : different 'const' qualifiers
+     1>c:\users\eli\documents\github\egfx\test\testapp\egfx_test\egfx_testdrawloop.c(122): warning C4090: 'function' : different 'const' qualifiers
+     1>c:\users\eli\documents\github\egfx\test\testapp\egfx_test\egfx_testdrawloop.c(171): warning C4090: 'function' : different 'const' qualifiers
+     1>c:\users\eli\documents\github\egfx\test\testapp\egfx_test\egfx_testdrawloop.c(172): warning C4090: 'function' : different 'const' qualifiers
+     1>c:\users\eli\documents\github\egfx\test\testapp\egfx_test\egfx_testdrawloop.c(173): warning C4090: 'function' : different 'const' qualifiers
+     1>c:\users\eli\documents\github\egfx\test\testapp\egfx_test\egfx_testdrawloop.c(174): warning C4090: 'function' : different 'const' qualifiers
+     1>c:\users\eli\documents\github\egfx\test\testapp\egfx_test\egfx_testdrawloop.c(205): warning C4090: 'function' : different 'const' qualifiers
+     1>c:\users\eli\documents\github\egfx\test\testapp\egfx_test\egfx_testdrawloop.c(206): warning C4090: 'function' : different 'const' qualifiers
+     1>c:\users\eli\documents\github\egfx\test\testapp\egfx_test\egfx_testdrawloop.c(207): warning C4090: 'function' : different 'const' qualifiers
+     1>c:\users\eli\documents\github\egfx\test\testapp\egfx_test\egfx_testdrawloop.c(208): warning C4090: 'function' : different 'const' qualifiers
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\eGFX_Test.res" eGFX_Test.rc 
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Eli\Dropbox\GFX\eGFX\TEST\TestApp\eGFX_Test\Debug\eGFX_Test.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Eli\Dropbox\GFX\eGFX\TEST\TestApp\eGFX_Test\Debug\eGFX_Test.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Eli\Dropbox\GFX\eGFX\TEST\TestApp\eGFX_Test\Debug\eGFX_Test.lib" /MACHINE:X86 Debug\eGFX_Test.res
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Eli\Documents\GitHub\eGFX\TEST\TestApp\eGFX_Test\Debug\eGFX_Test.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Eli\Documents\GitHub\eGFX\TEST\TestApp\eGFX_Test\Debug\eGFX_Test.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Eli\Documents\GitHub\eGFX\TEST\TestApp\eGFX_Test\Debug\eGFX_Test.lib" /MACHINE:X86 Debug\eGFX_Test.res
          Debug\Arial__24px__Regular__AntiAliasGridFit_4BPP.obj
          Debug\Arial__24px__Regular__SingleBitPerPixelGridFit_4BPP.obj
          Debug\FONT_3_5_1BPP.obj
@@ -25,12 +75,13 @@
          Debug\TestSprites_8BPP.obj
          Debug\eGFX_Driver_Win32.obj
          Debug\eGFX.obj
+         Debug\eGFX_BMP.obj
          Debug\eGFX_Test.obj
          Debug\eGFX_TestDrawLoop.obj
          Debug\stdafx.obj
-         eGFX_Test.vcxproj -> C:\Users\Eli\Dropbox\GFX\eGFX\TEST\TestApp\eGFX_Test\Debug\eGFX_Test.exe
-     1>Done Building Project "C:\Users\Eli\Dropbox\GFX\eGFX\TEST\TestApp\eGFX_Test\eGFX_Test.vcxproj" (Build target(s)).
+         eGFX_Test.vcxproj -> C:\Users\Eli\Documents\GitHub\eGFX\TEST\TestApp\eGFX_Test\Debug\eGFX_Test.exe
+     1>Done Building Project "C:\Users\Eli\Documents\GitHub\eGFX\TEST\TestApp\eGFX_Test\eGFX_Test.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.79
+Time Elapsed 00:00:03.51
