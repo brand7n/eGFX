@@ -241,7 +241,7 @@ const eGFX_ImagePlane FONT_3_5_4BPP_FontElement_9 = { eGFX_IMAGE_PLANE_4BPP,(uin
 ////***************************************************************************
 
 const uint8_t FONT_3_5_4BPP_FontElement_colon_Data[10] = { 
-0x00,0x00,0xF0,0x00,0x00,0x00,0xF0,0x00,0x00,0x00 }; 
+0x00,0x00,0x0F,0x00,0x00,0x00,0x0F,0x00,0x00,0x00 }; 
 
 const eGFX_ImagePlane FONT_3_5_4BPP_FontElement_colon = { eGFX_IMAGE_PLANE_4BPP,(uint8_t *)&FONT_3_5_4BPP_FontElement_colon_Data,(uint16_t)3,(uint16_t)5};
 
