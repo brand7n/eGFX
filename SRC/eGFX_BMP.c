@@ -1,14 +1,17 @@
 #include "eGFX.h"
 
+#define CHAN_FAT_FS
+
+
 #ifdef WIN32
 
 #include <stdio.h>
 
 #endif
 
-#ifdef FAT_FS
+#ifdef CHAN_FAT_FS
 
-#include "FF.h"
+#include "ff.h"
 
 #endif
 
@@ -48,9 +51,10 @@ void ImagePlaneToGrayScaleBMP(char *FileName,eGFX_ImagePlane * IP)
 	FILE *MyFile;
 	#endif
 	
-	#ifdef FAT_FS
+	#ifdef CHAN_FAT_FS
 
 	FIL MyFile;
+	FRESULT R;
 
 	#endif
 
@@ -61,15 +65,15 @@ void ImagePlaneToGrayScaleBMP(char *FileName,eGFX_ImagePlane * IP)
 
 	MyBMP_FileHeader.bfSize = sizeof(BITMAPFILEHEADER) +
 							  sizeof(BITMAPINFOHEADER) + 
-								4 * 256 +// This routine uses index color, 8-bit for gray scale.    4 bytes per palette entry
-								(IP->SizeX * IP->SizeY) + 4;  //Compute the size of the bit map data assuming 1 byte per pixel
+								(4 * 256) +// This routine uses index color, 8-bit for gray scale.    4 bytes per palette entry
+								(IP->SizeX * IP->SizeY)  ;  //Compute the size of the bit map data assuming 1 byte per pixel
 								
 	MyBMP_FileHeader.bfReserved1 = 0;
 	MyBMP_FileHeader.bfReserved2 = 0;
 	
 	MyBMP_FileHeader.bfOffBits = sizeof(BITMAPFILEHEADER)+
 								sizeof(BITMAPINFOHEADER)+
-								(4 * 256) + 4;// This routine uses indexed color, 8-bit for grey scale.    4 bytes per palette entry
+								(4 * 256) ;// This routine uses indexed color, 8-bit for grey scale.    4 bytes per palette entry
 	
 
 	MyBMP_InfoHeader.biSize = sizeof(BITMAPINFOHEADER);
@@ -79,11 +83,11 @@ void ImagePlaneToGrayScaleBMP(char *FileName,eGFX_ImagePlane * IP)
 	MyBMP_InfoHeader.biPlanes = 1;
 	MyBMP_InfoHeader.biBitCount = 8;
 	MyBMP_InfoHeader.biCompression = 0;
-	MyBMP_InfoHeader.biSizeImage = IP->SizeX * IP->SizeY;
-	MyBMP_InfoHeader.biXPelsPerMeter = 10000;
-	MyBMP_InfoHeader.biYPelsPerMeter = 10000;
+	MyBMP_InfoHeader.biSizeImage = 0;
+	MyBMP_InfoHeader.biXPelsPerMeter = 3780;
+	MyBMP_InfoHeader.biYPelsPerMeter = 3780;
 	MyBMP_InfoHeader.biClrUsed = 256;
-	MyBMP_InfoHeader.biClrImportant = 0;
+	MyBMP_InfoHeader.biClrImportant = 256;
 
 	
 
@@ -94,14 +98,21 @@ void ImagePlaneToGrayScaleBMP(char *FileName,eGFX_ImagePlane * IP)
 	if (MyFile == NULL)
 		return
 	#endif
-#	ifdef CHAN_FAT_FS
-	if (f_open(&MyFile, Filname, FA_WRITE))
+   #ifdef CHAN_FAT_FS
+	R = f_open(&MyFile, FileName, FA_WRITE | FA_CREATE_ALWAYS);
+
+	if(R!=FR_OK)
 		return;	
 	#endif
 
-
-	fwrite((const void *)&MyBMP_FileHeader, sizeof(uint8_t), 14, MyFile);
-	fwrite((const void *)&MyBMP_InfoHeader, sizeof(uint8_t), 40, MyFile);
+	#ifdef WIN32
+		fwrite((const void *)&MyBMP_FileHeader, sizeof(uint8_t), 14, MyFile);
+		fwrite((const void *)&MyBMP_InfoHeader, sizeof(uint8_t), 40, MyFile);
+	#endif
+	#ifdef CHAN_FAT_FS
+		f_write(&MyFile,(const void *)&MyBMP_FileHeader,  14, &i);
+		f_write(&MyFile,(const void *)&MyBMP_InfoHeader, 40, &i);
+	#endif
 
     //Write out the grey scale color data
 
@@ -116,10 +127,19 @@ void ImagePlaneToGrayScaleBMP(char *FileName,eGFX_ImagePlane * IP)
 			#endif
 
 			#ifdef CHAN_FAT_FS
-					fputc(i, &MyFile);
-					fputc(i, &MyFile);
-					fputc(i, &MyFile);
-					fputc(i, &MyFile);
+
+					k =   ((uint32_t)((float)(i) / (255.0) * 245.0))
+						+ (((uint32_t)((float)(i) / (255.0) * 44.0)) <<16)
+						+ (((uint32_t)((float)(i) / (255.0) * 211.0)) <<8);
+
+
+
+					f_write(&MyFile,&k, 4, &j);
+					//f_putc(i, &MyFile);
+					//f_putc(i, &MyFile);
+					//f_putc(i, &MyFile);
+					//f_putc(i, &MyFile);
+
 			#endif
 	}
 
@@ -161,7 +181,12 @@ void ImagePlaneToGrayScaleBMP(char *FileName,eGFX_ImagePlane * IP)
 		{
 			for (k = 0; k < 0x4 - (IP->SizeX & 0x3); k++)
 			{
-				fputc(0, MyFile);
+				#ifdef WIN32
+					fputc(0, MyFile);
+				#endif
+				#ifdef CHAN_FAT_FS
+					f_putc(0, &MyFile);
+				#endif
 			}
 		}
 	}
@@ -171,7 +196,7 @@ void ImagePlaneToGrayScaleBMP(char *FileName,eGFX_ImagePlane * IP)
 	#endif
 
 	#ifdef CHAN_FAT_FS
-		fclose(&MyFile);
+		f_close(&MyFile);
 	#endif
 
 }
