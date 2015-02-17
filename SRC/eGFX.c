@@ -26,9 +26,9 @@ void eGFX_PutPixel(eGFX_ImagePlane *Image,
                    int16_t y,
                    eGFX_PixelState PS)
 {
-    uint16_t Offset;
+    uint32_t Offset;
     uint8_t Mask;
-    uint16_t MemWidthInBytes;
+    uint32_t MemWidthInBytes;
 
     if((x<Image->SizeX) && (y<Image->SizeY) && (x>=0) && (y>=0))
     {
@@ -76,12 +76,13 @@ void eGFX_PutPixel(eGFX_ImagePlane *Image,
                 Offset = (y * MemWidthInBytes) + x;
                 Image->Data[Offset] = ((uint8_t)PS);
                 break;
-				/*
-            case  eGFX_IMAGE_PLANE_16BPP:
+		    case  eGFX_IMAGE_PLANE_16BPP:
                 MemWidthInBytes  = Image->SizeX <<1;
                 Offset = (y * MemWidthInBytes) + (x << 1);
-                *(uint16_t *)(Image + Offset) = (uint16_t)(PS);
+                *(uint16_t *)(Image->Data + Offset) = (uint16_t)(PS);
                 break;
+
+        		/*
 
             case  eGFX_IMAGE_PLANE_24BPP:
                 MemWidthInBytes  = Image->SizeX * 3;
@@ -108,9 +109,9 @@ eGFX_PixelState eGFX_GetPixel(eGFX_ImagePlane *Image,
                          int16_t x,
                          int16_t y)
 {
-	uint16_t Offset = 0;
+	uint32_t Offset = 0;
     uint8_t Mask;
-    uint16_t MemWidthInBytes;
+    uint32_t MemWidthInBytes;
 	eGFX_PixelState PS = 0;
 
     if((x<Image->SizeX) && (y<Image->SizeY) && (x>=0) && (y>=0))
@@ -149,12 +150,13 @@ eGFX_PixelState eGFX_GetPixel(eGFX_ImagePlane *Image,
                 Offset = (y * MemWidthInBytes) + x;
                 PS = Image->Data[Offset];
                 break;
-		/*
+
             case  eGFX_IMAGE_PLANE_16BPP:
                 MemWidthInBytes  = Image->SizeX <<1;
                 Offset = (y * MemWidthInBytes) + (x << 1);
-                PS = *(uint16_t *)(Image + Offset);
+                PS = *(uint16_t *)(Image->Data + Offset);
                 break;
+            /*
 
             case  eGFX_IMAGE_PLANE_24BPP:
                 MemWidthInBytes  = Image->SizeX * 3;
@@ -1463,8 +1465,8 @@ void eGFX_ImagePlaneInit(eGFX_ImagePlane   *Image,uint8_t * Store, int16_t SizeX
 
 void eGFX_ImagePlane_Clear(eGFX_ImagePlane   *Image)
 {
-    uint16_t PlaneSpaceSize;
-    uint16_t i;
+    uint32_t PlaneSpaceSize;
+    uint32_t i;
 
     switch(Image->Type)
     {
@@ -1497,7 +1499,7 @@ void eGFX_ImagePlane_Clear(eGFX_ImagePlane   *Image)
             }
 
             break;
-			/*
+
         case  eGFX_IMAGE_PLANE_16BPP:
             PlaneSpaceSize = eGFX_CALCULATE_16BPP_IMAGE_STORAGE_SPACE_SIZE(Image->SizeX,Image->SizeY);
 
@@ -1507,7 +1509,7 @@ void eGFX_ImagePlane_Clear(eGFX_ImagePlane   *Image)
             }
 
             break;
-
+ /*
         case  eGFX_IMAGE_PLANE_24BPP:
             PlaneSpaceSize = eGFX_CALCULATE_24BPP_IMAGE_STORAGE_SPACE_SIZE(Image->SizeX,Image->SizeY);
 

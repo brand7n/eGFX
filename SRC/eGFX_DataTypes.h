@@ -27,6 +27,7 @@ typedef int16_t FIXED_1_14;
 #define eGFX_IMAGE_PLANE_24BPP    4
 #define eGFX_IMAGE_PLANE_32BPP    5
 
+
 typedef struct
 {
     uint8_t Type;
