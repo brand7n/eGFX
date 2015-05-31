@@ -1193,6 +1193,24 @@ int16_t  eGFX_printf(eGFX_ImagePlane *Image,
 }
 
 
+void  eGFX_HorizontalCentered_printf(eGFX_ImagePlane *Image,
+										 int16_t StartY,
+										 const eGFX_Font *MyFont,
+										 char *FormatString,...)
+{
+    va_list argptr;
+    va_start(argptr,FormatString);
+#ifdef WIN32
+    sprintf_s((char *)eGFX_StringBuf,eGFX_MAX_PRINTF_BUF_LENGTH,FormatString,argptr);
+#else
+    vsnprintf((char *)eGFX_StringBuf,eGFX_MAX_PRINTF_BUF_LENGTH,FormatString,argptr);
+#endif
+    va_end(argptr);
+
+	eGFX_DrawHorizontalCenteredString(Image,  StartY,eGFX_StringBuf, MyFont);
+
+}
+
 int16_t eGFX_DrawString_CustomSpacing(eGFX_ImagePlane *Image,
                                       int16_t StartX,
                                       int16_t StartY,

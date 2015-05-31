@@ -255,8 +255,13 @@ int16_t  eGFX_printf(eGFX_ImagePlane *Image,
                      int16_t StartX,
                      int16_t StartY,
                      const eGFX_Font *MyFont,
-                     
                      char *FormatString,...);
+
+void  eGFX_HorizontalCentered_printf(eGFX_ImagePlane *Image,
+			 int16_t StartY,
+			 const eGFX_Font *MyFont,
+			 char *FormatString,...)
+
 
 int16_t eGFX_DrawString_CustomSpacing(eGFX_ImagePlane *Image,
                                       int16_t StartX,
