@@ -13,6 +13,6 @@ int main()
     eGFX_DrawLine(&eGFX_BackBuffer, 0, 0, 32, 16, RED);
     eGFX_DrawCircle(&eGFX_BackBuffer, 32, 16, 8, WHITE);
     eGFX_DrawFilledCircle(&eGFX_BackBuffer, 48, 16, 8, BLUE);
-    eGFX_DrawLine(&eGFX_BackBuffer, 63, 0, 63, 32, GREEN);
+    eGFX_DrawLine(&eGFX_BackBuffer, 32, 0, 32, 32, GREEN);
     eGFX_Dump(&eGFX_BackBuffer);
 }
